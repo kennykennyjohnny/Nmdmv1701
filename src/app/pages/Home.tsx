@@ -65,8 +65,8 @@ export default function Home() {
   const modalContent = {
     couple: {
       title: 'Futurs Mariés',
-      price: '49€',
-      oldPrice: '200-500€',
+      price: '49,90€',
+      oldPrice: '',
       subtitle: 'Paiement unique • Accès 13 mois',
       icon: Heart,
       gradient: 'from-[#FF8100] to-[#ff6b6b]',
@@ -101,7 +101,7 @@ export default function Home() {
     },
     musicien: {
       title: 'Musiciens',
-      price: '9,99€/mois',
+      price: '9,90€/mois',
       oldPrice: '',
       subtitle: 'Version gratuite disponible',
       icon: Music2,
@@ -320,10 +320,9 @@ export default function Home() {
               <div className="flex items-center justify-between bg-gradient-to-r from-[#FF8100] to-[#ff6b6b] rounded-xl p-4 mb-3">
                 <div>
                   <div className="flex items-baseline gap-2 mb-1">
-                    <span className="text-3xl font-bold text-white" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>49€</span>
-                    <span className="text-white/70 line-through text-sm">200€</span>
+                    <span className="text-3xl font-bold text-white" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>49,90€</span>
                   </div>
-                  <p className="text-xs text-white/90">Paiement unique • Accès 13 mois</p>
+                  <p className="text-xs text-white/90">Paiement unique • Accès à vie à son mariage</p>
                 </div>
                 <button 
                   onClick={() => window.location.href = 'https://app.notremessedemariage.fr'}
@@ -494,7 +493,7 @@ export default function Home() {
                   <p className="text-xs text-white/70">Fonctions de base</p>
                 </div>
                 <div className="bg-gradient-to-br from-[#FF8100] to-[#ff6b6b] rounded-lg p-3 border border-[#FF8100]/30">
-                  <div className="text-lg font-bold text-white mb-0.5" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>9,99€/mois</div>
+                  <div className="text-lg font-bold text-white mb-0.5" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>9,90€/mois</div>
                   <p className="text-xs text-white/90">Premium</p>
                 </div>
               </div>
@@ -755,7 +754,7 @@ export default function Home() {
                       {[
                         { num: '1', title: 'Créez votre compte', desc: 'Inscription gratuite en 2 minutes' },
                         { num: '2', title: 'Explorez la plateforme', desc: 'Parcourez la bibliothèque et les fonctionnalités' },
-                        { num: '3', title: 'Activez l\'accès complet', desc: 'Paiement unique de 49€ quand vous êtes prêt' },
+                        { num: '3', title: 'Activez l\'accès complet', desc: '49,90€ (ou 39,90€ via paroisse/musicien)' },
                         { num: '4', title: 'Préparez votre messe', desc: '13 mois d\'accès pour tout préparer sereinement' }
                       ].map((step, i) => (
                         <div key={i} className="flex gap-4">
@@ -773,9 +772,7 @@ export default function Home() {
 
                   <div className="bg-gradient-to-r from-[#FF8100] to-[#ff6b6b] rounded-xl p-6 text-white">
                     <div className="flex items-baseline gap-3 mb-2">
-                      <span className="text-4xl font-bold" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>49€</span>
-                      <span className="text-white/70 line-through text-lg">200-500€</span>
-                      <span className="text-sm bg-white/20 px-2 py-1 rounded-full">Économisez 76%</span>
+                      <span className="text-4xl font-bold" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>49,90€</span>
                     </div>
                     <p className="text-white/90 mb-4">Paiement unique • Accès 13 mois • Sans engagement</p>
                     <button 
@@ -815,7 +812,7 @@ export default function Home() {
                     <div className="bg-gradient-to-br from-[#FF8100]/20 to-[#ff6b6b]/20 backdrop-blur-sm rounded-xl p-5 border-2 border-[#FF8100]/40">
                       <div className="flex items-center gap-2 mb-4">
                         <div className="bg-[#FF8100] text-white px-2 py-1 rounded-full text-xs font-bold">PREMIUM</div>
-                        <h4 className="font-bold text-white text-lg" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>9,99€/mois</h4>
+                        <h4 className="font-bold text-white text-lg" style={{ fontFamily: "'Alfarn', Georgia, serif" }}>9,90€/mois</h4>
                       </div>
                       <p className="text-[#FF8100] font-bold text-sm mb-3">Tout Gratuit +</p>
                       <ul className="space-y-2">
